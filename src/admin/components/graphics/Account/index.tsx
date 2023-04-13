@@ -50,7 +50,7 @@ const Account = () => {
 
   if (!user.email || Avatar === 'default') return <Default />;
   if (Avatar === 'gravatar') return <Gravatar />;
-  if (Avatar) return <Avatar />;
+  if (Avatar) return <Avatar user={user} />;
   return <Default />;
 };
 
